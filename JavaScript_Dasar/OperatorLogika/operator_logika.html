@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <script>
+        // Operator &&
+        // true  && true  = true
+        // true  && false = false
+        // false && true  = false    
+        // false && fasle = false
+        
+        // Operator ||
+        // true  || true  = true
+        // true  || false = true
+        // false || true  = true
+        // false || false = false
+
+        // Operator !
+        // ! true = false
+        // ! fasle = true
+        
+        const nilaiUjian = 90;
+        const nilaiAbsen = 80;
+
+        const lulusUjian = nilaiUjian > 75;
+        const lulusAbsen = nilaiAbsen > 75
+
+        const lulus = lulusUjian && lulusAbsen;
+        document.writeln("<p>" + lulus + "</p>") 
+    </script>
+</body>
+</html>
