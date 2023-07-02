@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Data Array</title>
+</head>
+<body>
+    <script>
+        let arrkosong = [];
+        let arr = ['muhammad','mufty','arifin']
+
+        const name = [];
+        name.push('muhammad');
+        name.push('mufty','arifin');
+
+        document.writeln(name);
+        console.log(name);
+        console.info(name);
+        console.table(name);
+
+        console.info(name[0]);
+
+        name[0] = 'ganteng';
+
+        console.table(name)
+
+        delete name[0]
+        name.push(1,2,3,4,5)
+        console.table(name)
+
+        name[0] = 'muhammad'
+        console.table(name)
+        name.push(['hallo', 'guys'])
+        console.table(name)
+    </script>
+</body>
+</html>
