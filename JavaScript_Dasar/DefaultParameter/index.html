@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default parameter</title>
+</head>
+<body>
+    
+    <script>
+        function register(name, gender = "UNKNOW") {
+            console.log(name);
+            console.log(gender);
+        }
+        register()
+        // namenya undefined dan gender defaultnya UNKNOW
+        register("Muhammad")
+        // namenya muhammad dan gender defaultnya UNKNOW
+        register("Muhammad", "Male")
+        // namenya muhammad dan gendernya male
+        register("Muhammad", undefined)
+        // namenya muhammad dan gender defaultnya UNKNOW
+        register("Muhammad", null)
+        // namenya muhammad dan gender defaultnya Null, karena null dianggapnya sudah ada valuenya, tapi valuenya kosong 
+    </script>
+</body>
+</html>
